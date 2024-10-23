@@ -7,8 +7,8 @@ public class Main {
         Options options = new Options();
         while (state.getState() != State.exit) {
             options.chooseOption(state);
-
+            System.out.println("State: " + state.getState());
             // if state gameOver than sout
-                }
+        }
     }
 }
