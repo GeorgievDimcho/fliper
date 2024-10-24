@@ -1,9 +1,8 @@
 
-public class Ramp implements FlipperElement {
+public class Ramp extends FlipperElement {
 
     private boolean opened;
     private int passes;
-    private int points;
     // Add more fields for other properties
 
     public void setOpened(boolean opened) {
@@ -26,13 +25,5 @@ public class Ramp implements FlipperElement {
     @Override
     public void accept(Visitor visitor) {
         visitor.visitRamp(this);
-    }
-
-    public int getPoints() {
-        return points;
-    }
-
-    public void setPoints(int points) {
-        this.points = points;
     }
 }

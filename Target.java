@@ -1,10 +1,9 @@
 
-public class Target implements FlipperElement {
+public class Target extends FlipperElement {
 
     private boolean elevated;
     private boolean ledOn;
     private int passes;
-    private int points;
     // Add more fields for other properties
 
     public void setElevated(boolean elevated) {
@@ -35,13 +34,5 @@ public class Target implements FlipperElement {
     @Override
     public void accept(Visitor visitor) {
         visitor.visitTarget(this);
-    }
-
-    public int getPoints() {
-        return points;
-    }
-
-    public void setPoints(int points) {
-        this.points = points;
     }
 }
